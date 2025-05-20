@@ -264,3 +264,35 @@ input,select{
     width: 35%;
     align-items: baseline;
 }
+.blog-block{
+    width: 100%;
+    display: grid;
+    gap: 150px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.post{
+    background-image: url(./images/cta-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    
+}
+.post-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.post-category{
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+}
+.post-content{
+    align-items: baseline;
+    background-color: white;
+    padding: 30px;
+    width: 60%;
+    margin-left: -100px;
+}
