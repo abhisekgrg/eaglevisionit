@@ -26,7 +26,7 @@ nav ul li:hover {
     color: #f94d1c;
 }
 nav ul{
-    gap: 30px;
+    gap: 20px;
 }
 
 header{
@@ -295,4 +295,217 @@ input,select{
     padding: 30px;
     width: 60%;
     margin-left: -100px;
+}
+
+.footer-section{
+    padding:50px 0;
+}
+
+.footer-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-block form{
+    margin-top: 20px;
+}
+.footer-block form input[type="email"]{
+    width: 100%;
+}
+.divider{
+    background-color: rgba(0, 0, 0,0.1);
+    width: 1px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.footer-title{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-content p{
+    font-size: 14px;
+    color: #4e4d4d;
+}
+/* Header styles */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Navigation menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover, 
+.nav-list a.active {
+    color: var(--primary-color);
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Main content spacing to account for fixed header */
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-list li:last-child {
+        border-bottom: none;
+    }
+    
+    /* Hamburger menu animation */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+.post-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.post-category{
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+}
+.post-content{
+    align-items: baseline;
+    background-color: white;
+    padding: 30px;
+    width: 60%;
+    margin-left: -100px;
+}
+
+.footer-section{
+    padding:50px 0;
+}
+
+.footer-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-block form{
+    margin-top: 20px;
+}
+.footer-block form input[type="email"]{
+    width: 100%;
+}
+.divider{
+    background-color: rgba(0, 0, 0,0.1);
+    width: 1px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.footer-title{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-content p{
+    font-size: 14px;
+    color: #4e4d4d;
 }
